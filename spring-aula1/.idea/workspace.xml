@@ -1,8 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="3532195c-ddb9-4317-812e-7d0018e150dc" name="Default" comment="Criando entidade Usuario">
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/target/classes/com/spring/aula/trick/controller/IndexController.class" afterPath="$PROJECT_DIR$/target/classes/com/spring/aula/trick/controller/IndexController.class" />
+    <list default="true" id="3532195c-ddb9-4317-812e-7d0018e150dc" name="Default" comment="">
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/java/com/spring/aula/trick/controller/IndexController.java" afterPath="$PROJECT_DIR$/src/main/java/com/spring/aula/trick/controller/IndexController.java" />
     </list>
@@ -19,8 +18,8 @@
       <file leaf-file-name="IndexController.java" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/src/main/java/com/spring/aula/trick/controller/IndexController.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="252">
-              <caret line="20" column="32" lean-forward="false" selection-start-line="20" selection-start-column="32" selection-end-line="20" selection-end-column="32" />
+            <state relative-caret-position="195">
+              <caret line="17" column="11" lean-forward="false" selection-start-line="17" selection-start-column="11" selection-end-line="17" selection-end-column="11" />
               <folding />
             </state>
           </provider>
@@ -292,7 +291,7 @@
       <option name="presentableId" value="Default" />
       <updated>1518274642817</updated>
       <workItem from="1518274650141" duration="598000" />
-      <workItem from="1518276426014" duration="3026000" />
+      <workItem from="1518276426014" duration="3140000" />
     </task>
     <task id="LOCAL-00001" summary="Subindo">
       <created>1518274831484</created>
@@ -322,11 +321,18 @@
       <option name="project" value="LOCAL" />
       <updated>1518283379247</updated>
     </task>
-    <option name="localTasksCounter" value="5" />
+    <task id="LOCAL-00005" summary="Criando método para retornar usuário">
+      <created>1518283598738</created>
+      <option name="number" value="00005" />
+      <option name="presentableId" value="LOCAL-00005" />
+      <option name="project" value="LOCAL" />
+      <updated>1518283598738</updated>
+    </task>
+    <option name="localTasksCounter" value="6" />
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="4143000" />
+    <option name="totallyTimeSpent" value="4257000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="77" y="47" width="1366" height="743" extended-state="6" />
@@ -373,7 +379,8 @@
     <MESSAGE value="Apagando" />
     <MESSAGE value="Criando métodos raiz" />
     <MESSAGE value="Criando entidade Usuario" />
-    <option name="LAST_COMMIT_MESSAGE" value="Criando entidade Usuario" />
+    <MESSAGE value="Criando método para retornar usuário" />
+    <option name="LAST_COMMIT_MESSAGE" value="Criando método para retornar usuário" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager />
@@ -427,8 +434,8 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/src/main/java/com/spring/aula/trick/controller/IndexController.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="252">
-          <caret line="20" column="32" lean-forward="false" selection-start-line="20" selection-start-column="32" selection-end-line="20" selection-end-column="32" />
+        <state relative-caret-position="195">
+          <caret line="17" column="11" lean-forward="false" selection-start-line="17" selection-start-column="11" selection-end-line="17" selection-end-column="11" />
           <folding />
         </state>
       </provider>

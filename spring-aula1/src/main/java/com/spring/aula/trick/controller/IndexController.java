@@ -18,7 +18,7 @@ public class IndexController {
     @RequestMapping(value = "/{nome}", method = RequestMethod.GET)
     public Usuario getTexto(@PathVariable String nome){
         Usuario usuario = new Usuario();
-        usuario.setNome("Patrick");
+        usuario.setNome(nome);
         return usuario;
     }
 
