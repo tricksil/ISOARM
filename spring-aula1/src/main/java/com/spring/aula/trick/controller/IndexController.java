@@ -1,6 +1,7 @@
 package com.spring.aula.trick.controller;
 
 
+import com.spring.aula.trick.model.Usuario;
 import org.springframework.web.bind.annotation.PathVariable;
 import org.springframework.web.bind.annotation.RequestMapping;
 import org.springframework.web.bind.annotation.RequestMethod;
@@ -15,8 +16,10 @@ public class IndexController {
     }
 
     @RequestMapping(value = "/{nome}", method = RequestMethod.GET)
-    public String getTexto(@PathVariable String nome){
-        return "Olá pessoal, sou o " + nome;
+    public Usuario getTexto(@PathVariable String nome){
+        Usuario usuario = new Usuario();
+        usuario.setNome("Patrick");
+        return usuario;
     }
 
 }

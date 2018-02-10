@@ -1,10 +1,10 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="3532195c-ddb9-4317-812e-7d0018e150dc" name="Default" comment="">
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/main/java/com/spring/aula/trick/model/Usuario.java" />
+    <list default="true" id="3532195c-ddb9-4317-812e-7d0018e150dc" name="Default" comment="Criando entidade Usuario">
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/target/classes/com/spring/aula/trick/controller/IndexController.class" afterPath="$PROJECT_DIR$/target/classes/com/spring/aula/trick/controller/IndexController.class" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/java/com/spring/aula/trick/controller/IndexController.java" afterPath="$PROJECT_DIR$/src/main/java/com/spring/aula/trick/controller/IndexController.java" />
     </list>
     <ignored path="$PROJECT_DIR$/target/" />
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
@@ -16,17 +16,17 @@
   </component>
   <component name="FileEditorManager">
     <leaf>
-      <file leaf-file-name="IndexController.java" pinned="false" current-in-tab="false">
+      <file leaf-file-name="IndexController.java" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/src/main/java/com/spring/aula/trick/controller/IndexController.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="216">
-              <caret line="19" column="5" lean-forward="true" selection-start-line="19" selection-start-column="5" selection-end-line="19" selection-end-column="5" />
+            <state relative-caret-position="252">
+              <caret line="20" column="32" lean-forward="false" selection-start-line="20" selection-start-column="32" selection-end-line="20" selection-end-column="32" />
               <folding />
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="Usuario.java" pinned="false" current-in-tab="true">
+      <file leaf-file-name="Usuario.java" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/main/java/com/spring/aula/trick/model/Usuario.java">
           <provider selected="true" editor-type-id="text-editor">
             <state relative-caret-position="126">
@@ -65,8 +65,8 @@
   <component name="IdeDocumentHistory">
     <option name="CHANGED_PATHS">
       <list>
-        <option value="$PROJECT_DIR$/src/main/java/com/spring/aula/trick/controller/IndexController.java" />
         <option value="$PROJECT_DIR$/src/main/java/com/spring/aula/trick/model/Usuario.java" />
+        <option value="$PROJECT_DIR$/src/main/java/com/spring/aula/trick/controller/IndexController.java" />
       </list>
     </option>
   </component>
@@ -142,14 +142,6 @@
               <item name="main" type="462c0819:PsiDirectoryNode" />
               <item name="java" type="462c0819:PsiDirectoryNode" />
               <item name="controller" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="spring-aula1" type="b2602c69:ProjectViewProjectNode" />
-              <item name="spring-aula1" type="462c0819:PsiDirectoryNode" />
-              <item name="src" type="462c0819:PsiDirectoryNode" />
-              <item name="main" type="462c0819:PsiDirectoryNode" />
-              <item name="java" type="462c0819:PsiDirectoryNode" />
-              <item name="model" type="462c0819:PsiDirectoryNode" />
             </path>
           </expand>
           <select />
@@ -300,7 +292,7 @@
       <option name="presentableId" value="Default" />
       <updated>1518274642817</updated>
       <workItem from="1518274650141" duration="598000" />
-      <workItem from="1518276426014" duration="2842000" />
+      <workItem from="1518276426014" duration="3026000" />
     </task>
     <task id="LOCAL-00001" summary="Subindo">
       <created>1518274831484</created>
@@ -323,11 +315,18 @@
       <option name="project" value="LOCAL" />
       <updated>1518283163296</updated>
     </task>
-    <option name="localTasksCounter" value="4" />
+    <task id="LOCAL-00004" summary="Criando entidade Usuario">
+      <created>1518283379247</created>
+      <option name="number" value="00004" />
+      <option name="presentableId" value="LOCAL-00004" />
+      <option name="project" value="LOCAL" />
+      <updated>1518283379247</updated>
+    </task>
+    <option name="localTasksCounter" value="5" />
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="3959000" />
+    <option name="totallyTimeSpent" value="4143000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="77" y="47" width="1366" height="743" extended-state="6" />
@@ -373,7 +372,8 @@
     <MESSAGE value="Subindo" />
     <MESSAGE value="Apagando" />
     <MESSAGE value="Criando métodos raiz" />
-    <option name="LAST_COMMIT_MESSAGE" value="Criando métodos raiz" />
+    <MESSAGE value="Criando entidade Usuario" />
+    <option name="LAST_COMMIT_MESSAGE" value="Criando entidade Usuario" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager />
@@ -413,14 +413,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/com/spring/aula/trick/controller/IndexController.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="216">
-          <caret line="19" column="5" lean-forward="true" selection-start-line="19" selection-start-column="5" selection-end-line="19" selection-end-column="5" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/src/main/java/com/spring/aula/trick/model/Usuario.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="126">
@@ -430,6 +422,14 @@
             <element signature="e#184#185#0" expanded="true" />
             <element signature="e#216#217#0" expanded="true" />
           </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/com/spring/aula/trick/controller/IndexController.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="252">
+          <caret line="20" column="32" lean-forward="false" selection-start-line="20" selection-start-column="32" selection-end-line="20" selection-end-column="32" />
+          <folding />
         </state>
       </provider>
     </entry>
