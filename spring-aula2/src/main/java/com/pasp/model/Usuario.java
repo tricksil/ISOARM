@@ -1,4 +1,4 @@
-package com.pasp.aula2.model;
+package com.pasp.model;
 
 public class Usuario {
 

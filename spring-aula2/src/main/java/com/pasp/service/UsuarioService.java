@@ -1,7 +1,8 @@
-package com.pasp.aula2.service;
+package com.pasp.service;
 
-import com.pasp.aula2.model.Usuario;
 import org.springframework.stereotype.Service;
+
+import com.pasp.model.Usuario;
 
 import java.util.ArrayList;
 import java.util.List;

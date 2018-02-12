@@ -1,4 +1,4 @@
-package com.pasp.aula2.controller;
+package com.pasp.controller;
 
 
 import org.springframework.web.bind.annotation.RequestMapping;
