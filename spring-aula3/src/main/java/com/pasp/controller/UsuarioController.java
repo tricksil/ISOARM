@@ -1,9 +1,10 @@
-package com.pasp.aula3.controller;
+package com.pasp.controller;
 
-import com.pasp.aula3.model.Usuario;
-import com.pasp.aula3.service.UsuarioService;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.web.bind.annotation.*;
+
+import com.pasp.model.Usuario;
+import com.pasp.service.UsuarioService;
 
 import java.util.List;
 
