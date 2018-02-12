@@ -1,9 +1,18 @@
 package com.pasp.model;
 
-public class Usuario {
+import org.springframework.data.annotation.Id;
+import org.springframework.data.mongodb.core.mapping.Document;
 
+@Document
+public class Usuario {
+	
+	@Id
+	private String id;
+	
     private String nome;
+    
     private String email;
+    
     private int idade;
 
     public Usuario() {
@@ -13,6 +22,14 @@ public class Usuario {
         this.nome = nome;
         this.email = email;
         this.idade = idade;
+    }
+    
+    public String getId() {
+    	return id;
+    }
+    
+    public void setId(String id) {
+    	this.id = id;
     }
 
     public String getNome() {
