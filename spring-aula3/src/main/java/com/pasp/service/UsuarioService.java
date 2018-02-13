@@ -1,34 +1,27 @@
 package com.pasp.service;
 
+import java.util.List;
+
+import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Service;
 
 import com.pasp.model.Usuario;
-
-import java.util.ArrayList;
-import java.util.List;
+import com.pasp.repository.UsuarioRepository;
 
 @Service
 public class UsuarioService {
+	
+	@Autowired
+	private UsuarioRepository usuarioRepository;
 
-    public List<Usuario> listaUsuario(){
-        List<Usuario> usuarioLista = new ArrayList<Usuario>();
+    public List<Usuario> listaUsuario(){   
 
-        usuarioLista.add(new Usuario("Patrick", "patrick@gmail.com", 21));
-        usuarioLista.add(new Usuario("Gabriel", "gabriel@gmail.com",20));
-        usuarioLista.add(new Usuario("Bruno", "bruno@gmail.com", 19));
-
-        return usuarioLista;
+        return this.usuarioRepository.findAll();
     }
 
     public List<Usuario> listaUsuario(Usuario usuario){
-        List<Usuario> usuarioLista = new ArrayList<Usuario>();
-
-        usuarioLista.add(new Usuario("Patrick", "patrick@gmail.com", 21));
-        usuarioLista.add(new Usuario("Gabriel", "gabriel@gmail.com",20));
-        usuarioLista.add(new Usuario("Bruno", "bruno@gmail.com", 19));
-        usuarioLista.add(usuario);
-
-        return usuarioLista;
+        this.usuarioRepository.save(usuario);
+        return usuarioRepository.findAll();
     }
 
 }
