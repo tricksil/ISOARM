@@ -12,7 +12,7 @@ import com.pasp.repository.UsuarioRepository;
 public class UsuarioService {
 	
 	@Autowired
-	private UsuarioRepository usuarioRepository;
+	UsuarioRepository usuarioRepository;
 
     public List<Usuario> listaUsuario(){   
 
