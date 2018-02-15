@@ -33,5 +33,10 @@ public class UsuarioController {
     public void deletarUsuario(@PathVariable String id){
         this.usuarioService.deletarUsuario(id);
     }
+    
+    @RequestMapping(value = "/usuario/{id}", method = RequestMethod.GET)
+    public void consultarUsuario(@PathVariable String id){
+        return this.usuarioService.consultarUsuario(id);
+    }
 
 }
