@@ -28,5 +28,10 @@ public class UsuarioController {
     public Usuario editarUsuario(@RequestBody Usuario usuario){
         return this.usuarioService.salvarUsuario(usuario);
     }
+    
+    @RequestMapping(value = "/usuario/{id}", method = RequestMethod.DELETE)
+    public Usuario deletarUsuario(@PathVariable String id){
+        return this.usuarioService.deletarUsuario(id);
+    }
 
 }
