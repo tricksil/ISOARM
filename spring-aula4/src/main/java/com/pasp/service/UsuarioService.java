@@ -14,14 +14,13 @@ public class UsuarioService {
 	@Autowired
 	UsuarioRepository usuarioRepository;
 
-    public List<Usuario> listaUsuario(){   
+    public List<Usuario> listarUsuario(){   
 
         return this.usuarioRepository.findAll();
     }
 
-    public List<Usuario> listaUsuario(Usuario usuario){
-        this.usuarioRepository.save(usuario);
-        return usuarioRepository.findAll();
+    public Usuario salvarUsuario(Usuario usuario){
+        return this.usuarioRepository.save(usuario);
     }
 
 }
