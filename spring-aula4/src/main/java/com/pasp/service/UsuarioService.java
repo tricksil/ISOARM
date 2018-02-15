@@ -22,5 +22,9 @@ public class UsuarioService {
     public Usuario salvarUsuario(Usuario usuario){
         return this.usuarioRepository.save(usuario);
     }
+    
+    public void deletarUsuario(String id){
+    	this.usuarioRepository.delete(id);
+    }
 
 }
