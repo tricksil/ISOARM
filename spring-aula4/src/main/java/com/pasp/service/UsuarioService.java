@@ -18,6 +18,11 @@ public class UsuarioService {
 
         return this.usuarioRepository.findAll();
     }
+    
+    public Usuario consultarUsuario(String id){   
+
+        return this.usuarioRepository.findOne(id);
+    }
 
     public Usuario salvarUsuario(Usuario usuario){
         return this.usuarioRepository.save(usuario);

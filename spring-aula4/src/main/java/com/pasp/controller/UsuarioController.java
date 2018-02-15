@@ -35,7 +35,7 @@ public class UsuarioController {
     }
     
     @RequestMapping(value = "/usuario/{id}", method = RequestMethod.GET)
-    public void consultarUsuario(@PathVariable String id){
+    public Usuario consultarUsuario(@PathVariable String id){
         return this.usuarioService.consultarUsuario(id);
     }
 
