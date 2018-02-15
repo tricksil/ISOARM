@@ -15,13 +15,13 @@ public class UsuarioController {
     private UsuarioService usuarioService;
 
     @RequestMapping(value = "/usuario", method = RequestMethod.GET)
-    public List<Usuario> listaUsuario(){
-        return this.usuarioService.listaUsuario();
+    public List<Usuario> listarUsuario(){
+        return this.usuarioService.listarUsuario();
     }
 
     @RequestMapping(value = "/usuario", method = RequestMethod.POST)
-    public List<Usuario> listaUsuario(@RequestBody Usuario usuario){
-        return this.usuarioService.listaUsuario(usuario);
+    public Usuario salvarUsuario(@RequestBody Usuario usuario){
+        return this.usuarioService.salvarUsuario(usuario);
     }
 
 }
