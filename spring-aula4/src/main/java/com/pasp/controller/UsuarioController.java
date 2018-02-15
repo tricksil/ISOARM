@@ -30,8 +30,8 @@ public class UsuarioController {
     }
     
     @RequestMapping(value = "/usuario/{id}", method = RequestMethod.DELETE)
-    public Usuario deletarUsuario(@PathVariable String id){
-        return this.usuarioService.deletarUsuario(id);
+    public void deletarUsuario(@PathVariable String id){
+        this.usuarioService.deletarUsuario(id);
     }
 
 }
