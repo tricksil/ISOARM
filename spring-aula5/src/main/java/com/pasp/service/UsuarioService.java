@@ -3,6 +3,9 @@ package com.pasp.service;
 import java.util.List;
 
 import org.springframework.beans.factory.annotation.Autowired;
+import org.springframework.data.domain.Page;
+import org.springframework.data.domain.PageRequest;
+import org.springframework.data.domain.Pageable;
 import org.springframework.stereotype.Service;
 
 import com.pasp.model.Usuario;
@@ -17,6 +20,11 @@ public class UsuarioService {
     public List<Usuario> listarUsuario(){   
 
         return this.usuarioRepository.findAll();
+    }
+    
+    public Page<Usuario> listaPaginada(int count, int page){
+    	Pageable pages = new PageRequest(page, count);
+    	return usuarioRepository.findAll(pages);
     }
     
     public Usuario consultarUsuario(String id){   
