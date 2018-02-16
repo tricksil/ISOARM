@@ -18,13 +18,16 @@ public class UsuarioService {
 	UsuarioRepository usuarioRepository;
 
     public List<Usuario> listarUsuario(){   
-
         return this.usuarioRepository.findAll();
     }
     
     public Page<Usuario> listaPaginada(int count, int page){
     	Pageable pages = new PageRequest(page, count);
     	return usuarioRepository.findAll(pages);
+    }
+    
+    public List<Usuario> buscarPorNome(String nome){   
+        return this.usuarioRepository.findAll();
     }
     
     public Usuario consultarUsuario(String id){   
