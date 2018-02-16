@@ -1,12 +1,17 @@
 package com.pasp.controller;
 
+import java.util.List;
+
 import org.springframework.beans.factory.annotation.Autowired;
-import org.springframework.web.bind.annotation.*;
+import org.springframework.data.domain.Page;
+import org.springframework.web.bind.annotation.PathVariable;
+import org.springframework.web.bind.annotation.RequestBody;
+import org.springframework.web.bind.annotation.RequestMapping;
+import org.springframework.web.bind.annotation.RequestMethod;
+import org.springframework.web.bind.annotation.RestController;
 
 import com.pasp.model.Usuario;
 import com.pasp.service.UsuarioService;
-
-import java.util.List;
 
 @RestController
 public class UsuarioController {
@@ -17,6 +22,11 @@ public class UsuarioController {
     @RequestMapping(value = "/usuario", method = RequestMethod.GET)
     public List<Usuario> listarUsuario(){
         return this.usuarioService.listarUsuario();
+    }
+    
+    @RequestMapping(value = "/usuario/{page}/{count}", method = RequestMethod.GET)
+    public Page<Usuario> listaPaginada(@PathVariable int page, @PathVariable int count){
+        return this.usuarioService.listaPaginada(count, page);
     }
 
     @RequestMapping(value = "/usuario", method = RequestMethod.POST)
