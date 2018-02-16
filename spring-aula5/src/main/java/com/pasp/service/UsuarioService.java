@@ -27,7 +27,7 @@ public class UsuarioService {
     }
     
     public List<Usuario> buscarPorNome(String nome){   
-        return this.usuarioRepository.findAll();
+        return this.usuarioRepository.findByNomeLikeIgnoreCase(nome);
     }
     
     public Usuario consultarUsuario(String id){   
