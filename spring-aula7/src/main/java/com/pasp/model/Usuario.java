@@ -30,9 +30,16 @@ public class Usuario {
     	this.email = usuario.getEmail();
     	this.senha = usuario.getSenha();
     	this.perfis = usuario.getPerfis();
-    }
+    }   
     
-    public String getId() {
+    public Usuario(String nome, String email, String senha, List<Perfil> perfis) {
+		this.nome = nome;
+		this.email = email;
+		this.senha = senha;
+		this.perfis = perfis;
+	}
+
+	public String getId() {
     	return id;
     }
     
