@@ -29,6 +29,11 @@ public class UsuarioController {
         return this.usuarioService.listaPaginada(count, page);
     }
     
+    @RequestMapping(value = "/usuario/{id}", method = RequestMethod.GET)
+    public Usuario getById(@PathVariable String id){
+        return this.usuarioService.getById(id);
+    }
+    
     @RequestMapping(value = "/usuario/{nome}/nome", method = RequestMethod.GET)
     public List<Usuario> buscarPorNome(@PathVariable String nome){
         return this.usuarioService.buscarPorNome(nome);
@@ -47,11 +52,6 @@ public class UsuarioController {
     @RequestMapping(value = "/usuario/{id}", method = RequestMethod.DELETE)
     public void deletarUsuario(@PathVariable String id){
         this.usuarioService.deletarUsuario(id);
-    }
-    
-    @RequestMapping(value = "/usuario/{id}", method = RequestMethod.GET)
-    public Usuario consultarUsuario(@PathVariable String id){
-        return this.usuarioService.consultarUsuario(id);
     }
 
 }
