@@ -1,6 +1,9 @@
 package com.pasp.model;
 
+import java.util.List;
+
 import org.springframework.data.annotation.Id;
+import org.springframework.data.mongodb.core.mapping.DBRef;
 import org.springframework.data.mongodb.core.mapping.Document;
 
 @Document
@@ -14,6 +17,9 @@ public class Usuario {
     private String email;
     
     private int idade;
+    
+    @DBRef
+    private List<Perfil> perfis;
 
     public Usuario() {
     }
@@ -55,4 +61,13 @@ public class Usuario {
     public void setIdade(int idade) {
         this.idade = idade;
     }
+
+	public List<Perfil> getPerfis() {
+		return perfis;
+	}
+
+	public void setPerfis(List<Perfil> perfis) {
+		this.perfis = perfis;
+	}    
+    
 }
