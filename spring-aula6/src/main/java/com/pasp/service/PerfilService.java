@@ -29,7 +29,7 @@ public class PerfilService {
         return this.perfilRepository.findByNomeLikeIgnoreCase(nome);
     }
     
-    public Perfil consultarPerfil(String id){   
+    public Perfil getById(String id){   
 
         return this.perfilRepository.findOne(id);
     }
