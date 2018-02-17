@@ -9,9 +9,9 @@
 	</parent>
 
 	<groupId>com.pasp</groupId>
-	<artifactId>spring-aula6</artifactId>
+	<artifactId>spring-aula7</artifactId>
 	<version>0.0.1-SNAPSHOT</version>
-	<name>spring-aula6</name>
+	<name>spring-aula7</name>
 
 	<dependencies>
 		<dependency>
