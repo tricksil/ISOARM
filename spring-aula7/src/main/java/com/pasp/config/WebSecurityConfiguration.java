@@ -29,8 +29,7 @@ public class WebSecurityConfiguration extends WebSecurityConfigurerAdapter {
 	}
 	
 	public void configure (WebSecurity security) throws Exception{
-		security.ignoring()
-					.antMatchers(HttpMethod.OPTIONS, "/**")
+		security.ignoring()	.antMatchers(HttpMethod.OPTIONS, "/**")
 				.antMatchers(HttpMethod.GET, "/public/**");
 	}
 	
