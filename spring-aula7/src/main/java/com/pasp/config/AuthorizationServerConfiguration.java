@@ -43,6 +43,7 @@ public class AuthorizationServerConfiguration extends AuthorizationServerConfigu
 				.authorizedGrantTypes("password", "authorization_code", "refresh_token").scopes("bar", "read", "write")
 				.refreshTokenValiditySeconds(20000)
 				.accessTokenValiditySeconds(20000)
+				.resourceIds("restservice")
 				.secret("123");
 	}
 	
