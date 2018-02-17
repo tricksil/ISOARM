@@ -29,7 +29,7 @@ public class UsuarioController {
         return this.usuarioService.listaPaginada(count, page);
     }
     
-    @RequestMapping(value = "/usuario/{nome}", method = RequestMethod.GET)
+    @RequestMapping(value = "/usuario/{nome}/nome", method = RequestMethod.GET)
     public List<Usuario> buscarPorNome(@PathVariable String nome){
         return this.usuarioService.buscarPorNome(nome);
     }
