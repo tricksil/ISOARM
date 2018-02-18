@@ -6,8 +6,8 @@ import { Observable } from 'rxjs';
 
 import 'rxjs/add/operator/map';
 
-import { Utils } from '../../model/utils';
 import { Usuario } from '../../model/usuario';
+import { Utils } from '../../model/utils';
 
 /*
   Generated class for the LoginServiceProvider provider.
