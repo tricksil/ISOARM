@@ -35,7 +35,7 @@ public class CargaInicial implements ApplicationListener<ContextRefreshedEvent>{
 			
 			perfisUsuario.add(perfil);
 			
-			usuarioRepository.save(new Usuario("Patrick", "admin", "123", perfisUsuario)); 
+			usuarioRepository.save(new Usuario("ADMIN", "admin", "123", perfisUsuario)); 
 			
 		}
 		
