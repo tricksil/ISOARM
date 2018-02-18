@@ -1,5 +1,6 @@
 import { NgModule, ErrorHandler } from '@angular/core';
-import { Http, HttpModule } from '@angular/http'
+import { Http, HttpModule } from '@angular/http';
+import { LoginPageModule } from '../pages/login/login.module';
 import { BrowserModule } from '@angular/platform-browser';
 import { IonicApp, IonicModule, IonicErrorHandler } from 'ionic-angular';
 import { MyApp } from './app.component';
@@ -13,6 +14,7 @@ import { StatusBar } from '@ionic-native/status-bar';
 import { SplashScreen } from '@ionic-native/splash-screen';
 import { LoginServiceProvider } from '../providers/login-service/login-service';
 
+
 @NgModule({
   declarations: [
     MyApp,
@@ -24,6 +26,7 @@ import { LoginServiceProvider } from '../providers/login-service/login-service';
   imports: [
     BrowserModule,
     HttpModule,
+    LoginPageModule,
     IonicModule.forRoot(MyApp)
   ],
   bootstrap: [IonicApp],
