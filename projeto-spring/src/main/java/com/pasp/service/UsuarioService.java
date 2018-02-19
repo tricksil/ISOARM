@@ -31,7 +31,9 @@ public class UsuarioService {
     }
     
     public Usuario findByEmail(String email) {
-    	return this.usuarioRepository.findByEmail(email);
+    	Usuario usuario = this.findByEmail(email);
+    	usuario.setSenha("");
+    	return usuario;
     }
     
     public Usuario getById(String id){   
