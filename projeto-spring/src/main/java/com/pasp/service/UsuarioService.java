@@ -30,6 +30,10 @@ public class UsuarioService {
         return this.usuarioRepository.findByNomeLikeIgnoreCase(nome);
     }
     
+    public Usuario findByEmail(String email) {
+    	return this.usuarioRepository.findByEmail(email);
+    }
+    
     public Usuario getById(String id){   
 
         return this.usuarioRepository.findOne(id);
