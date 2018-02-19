@@ -58,10 +58,8 @@ public class UsuarioController {
     
     @RequestMapping(value = "/usuario/logado", method = RequestMethod.GET)
     @ResponseBody
-    public Usuario currentUserName(Principal principal) {
-    	Usuario usuario = this.usuarioService.findByEmail(principal.getName());
-    	usuario.setSenha("");
-    	return usuario;
+    public Usuario currentUserName(Principal principal) {    	    	
+    	return this.usuarioService.findByEmail(principal.getName());
     }
     
 
