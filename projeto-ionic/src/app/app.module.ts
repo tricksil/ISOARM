@@ -1,3 +1,4 @@
+import { CookieService } from 'angular2-cookie/core';
 import { NgModule, ErrorHandler } from '@angular/core';
 import { HttpModule } from '@angular/http';
 import { LoginPageModule } from '../pages/login/login.module';
@@ -38,6 +39,7 @@ import { LoginServiceProvider } from '../providers/login-service/login-service';
     TabsPage
   ],
   providers: [
+    CookieService,
     StatusBar,
     SplashScreen,
     {provide: ErrorHandler, useClass: IonicErrorHandler},
