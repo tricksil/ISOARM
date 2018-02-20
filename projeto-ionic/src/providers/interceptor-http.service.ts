@@ -10,11 +10,11 @@ export class InterceptorHttpService extends Http {
     super(backend, defaultOptions);
   }
 
-  request(url: string | Request, options?: RequestOptionsArgs): Observable<Response>{
+  request(url: string | Request, options?: RequestOptionsArgs): Observable<Response> {
       return super.request(url, options);
   }
 
-  get(url: string, options?: Request): Observable<Response>{
+  get(url: string, options?: Request): Observable<Response> {
       return super.get(url,options);
   }
 
