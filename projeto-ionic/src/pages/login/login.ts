@@ -7,6 +7,7 @@ import { IonicPage, NavController, NavParams } from 'ionic-angular';
 import { LoginServiceProvider } from '../../providers/login-service/login-service';
 import { RequestOptions } from '@angular/http';
 import { TabsPage } from '../tabs/tabs';
+import { HomePage } from './../home/home';
 
 
 /**
