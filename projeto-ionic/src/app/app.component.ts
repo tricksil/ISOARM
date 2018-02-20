@@ -6,6 +6,7 @@ import { SplashScreen } from '@ionic-native/splash-screen';
 import { LoginPage } from '../pages/login/login';
 import { TabsPage } from '../pages/tabs/tabs';
 import { CookieService } from 'angular2-cookie/core';
+import { RequestOptions } from '@angular/http';
 
 @Component({
   templateUrl: 'app.html'
@@ -19,9 +20,12 @@ export class MyApp {
     platform: Platform,
     statusBar: StatusBar,
     splashScreen: SplashScreen,
+    private requestOptions: RequestOptions,
     private cookieService: CookieService
   ) {
     if(this.cookieService.getObject("usuarioAtual")){
+      this.requestOptions.headers.set('Authorizatio', "Bearer " +
+          this.cookieService.get("accessToken"));
       this.rootPage = TabsPage;
     } else {
       this.rootPage = LoginPage;
