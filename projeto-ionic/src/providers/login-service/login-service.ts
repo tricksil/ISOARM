@@ -42,12 +42,12 @@ export class LoginServiceProvider {
 
   public getUsuarioAtual(token: any){
 
-    let headers = new Headers({ 'Authorizatio': "Bearer" + token });
+    let headers = new Headers({ 'Authorization': "Bearer " + token });
 
     let options = new RequestOptions({ headers: headers });
 
     return this.http.get(this.userUrl, options)
-    .map(res => res.json);
+    .map(res => res.json());
   }
 
 }
