@@ -6,6 +6,7 @@ import { IonicPage, NavController, NavParams } from 'ionic-angular';
 
 import { LoginServiceProvider } from '../../providers/login-service/login-service';
 import { RequestOptions } from '@angular/http';
+import { TabsPage } from '../tabs/tabs';
 
 
 /**
@@ -44,12 +45,33 @@ export class LoginPage {
   loginUser(): void{
       if(this.loginForm.valid){
         this.loginService.login(this.loginForm.value).subscribe(
-          response => console.log(response)
+          res => this.loginSuccess(res)
         );
       }else {
         this.loading.present();
       }
   }
+
+  loginSuccess(res: any){
+      this.cookieService.removeAll();
+      this.cookieService.put("accessToken", res.access_token);
+      this.requestOptions.headers.set('Authorization', "Bearer " + res.access_token);
+      this.loginService.getUsuarioAtual(res.access_token).subscribe(
+          res => this.redirectPage(res)
+      );
+  }
+
+  redirectPage(res: any){
+      this.cookieService.putObject("usuarioAtual",res);
+      this.navCtrl.setRoot(TabsPage);
+  }
+
+  redirectUser(response){
+    this.cookieService.removeAll();
+    this.cookieService.put("accessToken", response.access_token);
+    this.requestOptions.headers.set('Authorization', "Bearer " + response.access_token);
+  }
+
 
 
 }
