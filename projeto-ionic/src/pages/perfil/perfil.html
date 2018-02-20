@@ -17,8 +17,8 @@
   <ion-list>
     <ion-list-header>Perfil </ion-list-header>
     <ion-item *ngFor="let perfil of perfis">
-        <ion-icon name="contact"></ion-icon>
-        {{ perfil }}
+        <ion-icon name="contact" item-left></ion-icon>
+        {{ perfil.nome }}
     </ion-item>
 
   </ion-list>
