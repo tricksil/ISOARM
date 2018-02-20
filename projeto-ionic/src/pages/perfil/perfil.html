@@ -7,12 +7,19 @@
 <ion-header>
 
   <ion-navbar>
-    <ion-title>PerfilPage</ion-title>
+    <ion-title>Perfil</ion-title>
   </ion-navbar>
 
 </ion-header>
 
 
 <ion-content padding>
+  <ion-list>
+    <ion-list-header>Perfil </ion-list-header>
+    <ion-item *ngFor="let perfil of perfis">
+        <ion-icon name="contact"></ion-icon>
+        {{ perfil }}
+    </ion-item>
 
+  </ion-list>
 </ion-content>
