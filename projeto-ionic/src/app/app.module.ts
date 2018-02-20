@@ -16,7 +16,6 @@ import { StatusBar } from '@ionic-native/status-bar';
 import { SplashScreen } from '@ionic-native/splash-screen';
 import { LoginServiceProvider } from '../providers/login-service/login-service';
 import { Utils } from '../model/utils';
-import { PerfilServiceProvider } from '../providers/perfil-service/perfil-service';
 
 
 @NgModule({
@@ -49,8 +48,7 @@ import { PerfilServiceProvider } from '../providers/perfil-service/perfil-servic
     SplashScreen,
     Utils,
     {provide: ErrorHandler, useClass: IonicErrorHandler},
-    LoginServiceProvider,
-    PerfilServiceProvider
+    LoginServiceProvider
   ]
 })
 export class AppModule {}
