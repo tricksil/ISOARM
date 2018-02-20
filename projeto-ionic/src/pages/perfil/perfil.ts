@@ -17,11 +17,16 @@ import { PerfilServiceProvider } from '../../providers/perfil-service/perfil-ser
 })
 export class PerfilPage {
 
-  constructor(public navCtrl: NavController, public navParams: NavParams) {
-  }
+  public perfis: any;
 
-  ionViewDidLoad() {
-    console.log('ionViewDidLoad PerfilPage');
-  }
+  constructor(
+    public navCtrl: NavController,
+     public navParams: NavParams,
+     public perfilService: PerfilServiceProvider
+  ) {
+    this.perfilService.getPerfis().subscribe(
+      response => this.perfis = response
+    );
+    }
 
 }
