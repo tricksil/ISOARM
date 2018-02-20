@@ -1,6 +1,6 @@
 import { CookieService } from 'angular2-cookie/core';
 import { NgModule, ErrorHandler } from '@angular/core';
-import { HttpModule } from '@angular/http';
+import { HttpModule, Http, XHRBackend, RequestOptions } from '@angular/http';
 import { LoginPageModule } from '../pages/login/login.module';
 import { BrowserModule } from '@angular/platform-browser';
 import { IonicApp, IonicModule, IonicErrorHandler } from 'ionic-angular';
@@ -16,6 +16,7 @@ import { StatusBar } from '@ionic-native/status-bar';
 import { SplashScreen } from '@ionic-native/splash-screen';
 import { LoginServiceProvider } from '../providers/login-service/login-service';
 import { Utils } from '../model/utils';
+import { InterceptorHttpService } from '../providers/interceptor-http.service';
 
 
 @NgModule({
@@ -47,6 +48,13 @@ import { Utils } from '../model/utils';
     StatusBar,
     SplashScreen,
     Utils,
+    {
+      provide: Http,
+      useFactory: (backend: XHRBackend, defaultOptions: RequestOptions) => {
+        return new InterceptorHttpService(backend, defaultOptions);
+      },
+      deps: [XHRBackend, RequestOptions]
+    },
     {provide: ErrorHandler, useClass: IonicErrorHandler},
     LoginServiceProvider
   ]
