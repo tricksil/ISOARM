@@ -31,7 +31,7 @@ public class UsuarioService {
     }
     
     public Usuario findByEmail(String email) {
-    	Usuario usuario = this.findByEmail(email);
+    	Usuario usuario = this.usuarioRepository.findByEmail(email);
     	usuario.setSenha("");
     	return usuario;
     }
