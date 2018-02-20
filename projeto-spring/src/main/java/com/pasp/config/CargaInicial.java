@@ -28,6 +28,7 @@ public class CargaInicial implements ApplicationListener<ContextRefreshedEvent>{
 		
 		if(perfis.isEmpty()) {
 			perfilRepository.save(new Perfil("ROLE_ADMIN"));
+			perfilRepository.save(new Perfil("ROLE_OREIA"));
 			
 			Perfil perfil = perfilRepository.findByNome("ROLE_ADMIN");
 			
