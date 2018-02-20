@@ -14,6 +14,7 @@ import { TabsPage } from '../pages/tabs/tabs';
 import { StatusBar } from '@ionic-native/status-bar';
 import { SplashScreen } from '@ionic-native/splash-screen';
 import { LoginServiceProvider } from '../providers/login-service/login-service';
+import { Utils } from '../model/utils';
 
 
 @NgModule({
@@ -42,6 +43,7 @@ import { LoginServiceProvider } from '../providers/login-service/login-service';
     CookieService,
     StatusBar,
     SplashScreen,
+    Utils,
     {provide: ErrorHandler, useClass: IonicErrorHandler},
     LoginServiceProvider
   ]
