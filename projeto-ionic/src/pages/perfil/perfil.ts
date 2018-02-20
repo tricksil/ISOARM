@@ -1,5 +1,5 @@
 import { Component } from '@angular/core';
-import { IonicPage, NavController, NavParams } from 'ionic-angular';
+import { NavController, NavParams } from 'ionic-angular';
 import { PerfilServiceProvider } from '../../providers/perfil-service/perfil-service';
 
 /**
@@ -9,7 +9,6 @@ import { PerfilServiceProvider } from '../../providers/perfil-service/perfil-ser
  * Ionic pages and navigation.
  */
 
-@IonicPage()
 @Component({
   selector: 'page-perfil',
   templateUrl: 'perfil.html',
