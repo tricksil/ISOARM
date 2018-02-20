@@ -1,5 +1,6 @@
-import { HttpClient } from '@angular/common/http';
 import { Injectable } from '@angular/core';
+import { Http, RequestOptions } from '@angular/http';
+import { Utils } from '../../model/utils';
 
 /*
   Generated class for the PerfilServiceProvider provider.
@@ -10,8 +11,19 @@ import { Injectable } from '@angular/core';
 @Injectable()
 export class PerfilServiceProvider {
 
-  constructor(public http: HttpClient) {
-    console.log('Hello PerfilServiceProvider Provider');
+  private perfilUrl: string;
+  public handleError: any;
+
+  constructor(
+    public http: Http,
+    public requestOptions: RequestOptions
+  ) {
+    this.perfilUrl = Utils.getUrlBackend() + "perfil/";
+  }
+
+  public getPerfis(){
+    return this.http.get(this.perfilUrl)
+    .map(res => res.json());
   }
 
 }
