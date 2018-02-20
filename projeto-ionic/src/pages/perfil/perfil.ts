@@ -20,8 +20,8 @@ export class PerfilPage {
 
   constructor(
     public navCtrl: NavController,
-     public navParams: NavParams,
-     public perfilService: PerfilServiceProvider
+    public navParams: NavParams,
+    public perfilService: PerfilServiceProvider
   ) {
     this.perfilService.getPerfis().subscribe(
       response => this.perfis = response
